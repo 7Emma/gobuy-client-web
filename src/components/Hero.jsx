@@ -80,8 +80,31 @@ export const Hero = () => {
         {/* Right - Phone mockups */}
         <div className="relative flex justify-center lg:justify-end">
           <div className="absolute -z-10 w-64 sm:w-80 h-64 sm:h-80 bg-orange-400/20 rounded-full blur-3xl animate-pulse" />
-          <div className="flex flex-col sm:flex-row items-center sm:items-end gap-4 md:gap-6">
-            <div className="w-[170px] sm:w-[220px] md:w-[230px] h-[352px] sm:h-[455px] md:h-[475px] bg-slate-950 rounded-[2.2rem] sm:rounded-[2.6rem] overflow-hidden border-8 border-slate-950 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.25),_0_30px_60px_-30px_rgba(0,0,0,0.3)] relative sm:rotate-[-3deg]">
+          <div className="sm:hidden relative w-[250px] h-[410px]">
+            <div className="absolute top-7 -left-2 w-[170px] h-[352px] bg-slate-950 rounded-[2.2rem] overflow-hidden border-8 border-slate-950 shadow-[0_30px_70px_-25px_rgba(0,0,0,0.35)] rotate-[-8deg] opacity-90">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-4 bg-slate-950 rounded-b-2xl z-20" />
+              <div className="absolute inset-[6px] rounded-[1.9rem] overflow-hidden bg-white">
+                <img
+                  src="/mockups/gobuy-login.jpg"
+                  className="absolute inset-0 w-full h-full object-cover"
+                  alt="Écran login GoBuy"
+                />
+              </div>
+            </div>
+            <div className="absolute top-0 right-0 w-[170px] h-[352px] bg-slate-950 rounded-[2.2rem] overflow-hidden border-8 border-slate-950 shadow-[0_45px_85px_-25px_rgba(0,0,0,0.35)] rotate-[4deg] z-10">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-4 bg-slate-950 rounded-b-2xl z-20" />
+              <div className="absolute inset-[6px] rounded-[1.9rem] overflow-hidden bg-white">
+                <img
+                  src="/mockups/gobuy-home.jpg"
+                  className="absolute inset-0 w-full h-full object-cover"
+                  alt="Écran accueil GoBuy"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="hidden sm:flex items-end gap-4 md:gap-6">
+            <div className="w-[220px] md:w-[230px] h-[455px] md:h-[475px] bg-slate-950 rounded-[2.6rem] overflow-hidden border-8 border-slate-950 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.25),_0_30px_60px_-30px_rgba(0,0,0,0.3)] relative rotate-[-3deg]">
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-5 bg-slate-950 rounded-b-2xl z-20" />
               <div className="absolute inset-[6px] rounded-[1.9rem] overflow-hidden bg-white">
                 <img
@@ -91,7 +114,7 @@ export const Hero = () => {
                 />
               </div>
             </div>
-            <div className="w-[170px] sm:w-[220px] md:w-[230px] h-[352px] sm:h-[455px] md:h-[475px] bg-slate-950 rounded-[2.2rem] sm:rounded-[2.6rem] overflow-hidden border-8 border-slate-950 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.25),_0_30px_60px_-30px_rgba(0,0,0,0.3)] relative sm:rotate-[3deg]">
+            <div className="w-[220px] md:w-[230px] h-[455px] md:h-[475px] bg-slate-950 rounded-[2.6rem] overflow-hidden border-8 border-slate-950 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.25),_0_30px_60px_-30px_rgba(0,0,0,0.3)] relative rotate-[3deg]">
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-5 bg-slate-950 rounded-b-2xl z-20" />
               <div className="absolute inset-[6px] rounded-[1.9rem] overflow-hidden bg-white">
                 <img

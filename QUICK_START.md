@@ -26,8 +26,6 @@ src/
 
 ### Option 1: Dev Server (Vite)
 ```bash
-npm run dev
-# ou
 yarn dev
 ```
 Accès: `http://localhost:5173/`
@@ -37,8 +35,6 @@ Ouvrir `DEMO.html` directement dans un navigateur pour un aperçu complet sans b
 
 ### Build production
 ```bash
-npm run build
-# ou  
 yarn build
 ```
 
@@ -107,7 +103,7 @@ export default function App() {
 Réinstaller les dépendances:
 ```bash
 rm -rf node_modules
-npm install
+yarn install
 ```
 
 ### Styles Tailwind manquants
@@ -159,8 +155,8 @@ Le build Vite génère:
 - Assets compressées
 
 ```bash
-npm run build    # Génère dist/
-npm run preview  # Preview du build
+yarn build    # Genere dist/
+yarn preview  # Preview du build
 ```
 
 ---
