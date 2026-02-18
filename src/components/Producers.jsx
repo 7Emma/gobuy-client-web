@@ -13,33 +13,33 @@ export const Producers = () => {
             {/* Left content */}
             <div className="text-white space-y-6">
               <h3 className="text-3xl md:text-5xl font-bold leading-tight">
-                Vous êtes agriculteur ? <br />
-                <span className="text-orange-500">Digitalisez votre vente.</span>
+                Vous etes vendeur ? <br />
+                <span className="text-orange-500">Centralisez votre boutique.</span>
               </h3>
               <p className="text-slate-400 text-lg">
-                Rejoignez notre réseau et bénéficiez d'outils de marketing puissants, de gestion de
-                stocks simplifiée et d'une visibilité locale accrue.
+                Rejoignez GoBuy pour publier votre catalogue, recevoir des commandes retail et gerer
+                votre activite depuis un espace vendeur unique.
               </p>
 
               {/* Benefits */}
               <ul className="space-y-3">
                 <li className="flex items-center gap-3 text-slate-200">
                   <CheckCircle2 className="w-5 h-5 text-orange-500 flex-shrink-0" />
-                  <span>Zéro commission sur vos premières ventes</span>
+                  <span>Boutique en ligne prete a l emploi</span>
                 </li>
                 <li className="flex items-center gap-3 text-slate-200">
                   <CheckCircle2 className="w-5 h-5 text-orange-500 flex-shrink-0" />
-                  <span>Paiements sécurisés et immédiats</span>
+                  <span>Commandes et paiements securises</span>
                 </li>
                 <li className="flex items-center gap-3 text-slate-200">
                   <CheckCircle2 className="w-5 h-5 text-orange-500 flex-shrink-0" />
-                  <span>Outils de marketing intégrés</span>
+                  <span>Suivi simple des stocks et des clients</span>
                 </li>
               </ul>
 
               {/* CTA Button */}
               <button className="px-8 py-4 bg-orange-500 text-white font-black rounded-2xl uppercase tracking-wider text-sm hover:bg-orange-600 transition-colors shadow-lg shadow-orange-900/40">
-                Ouvrir ma boutique
+                Creer mon espace vendeur
               </button>
             </div>
 
@@ -47,7 +47,7 @@ export const Producers = () => {
             <div className="relative">
               <img
                 src="https://www.lecoledescereales.fr/sites/default/files/styles/wysiwyg_100/public/2022-07/agriculteur_dans_un_champ.jpg?itok=fg4jnwEo"
-                alt="Producteur GoBuy"
+                alt="Vendeuse GoBuy"
                 className="rounded-3xl shadow-2xl w-full h-auto"
               />
             </div>

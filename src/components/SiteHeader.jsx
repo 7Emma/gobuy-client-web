@@ -49,7 +49,7 @@ export const SiteHeader = () => {
           className="hidden sm:inline-flex px-4 md:px-5 py-2.5 bg-slate-900 text-white rounded-full hover:bg-slate-800 transition-all shadow-md text-sm font-semibold"
           onClick={closeMenu}
         >
-          Demander une démo
+          Devenir vendeur
         </Link>
 
         <button
@@ -83,7 +83,7 @@ export const SiteHeader = () => {
             onClick={closeMenu}
             className="mt-3 inline-flex w-full justify-center px-4 py-2.5 bg-slate-900 text-white rounded-xl text-sm font-semibold"
           >
-            Demander une démo
+            Devenir vendeur
           </Link>
         </div>
       )}

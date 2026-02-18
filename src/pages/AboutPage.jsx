@@ -4,7 +4,7 @@ import { PageShell } from './PageShell';
 export const AboutPage = () => (
   <PageShell
     eyebrow="Qui sommes-nous"
-    title="Nous rapprochons les producteurs et les acheteurs."
+    title="Nous rapprochons les vendeurs et les acheteurs."
     subtitle="GoBuy est une plateforme de commerce panafricaine qui simplifie la vente locale, avec un focus sur la transparence, la qualité et la rapidité."
   >
     <div className="grid md:grid-cols-3 gap-6 mb-8">
@@ -68,7 +68,7 @@ export const AboutPage = () => (
           <li>Déploiement par hubs urbains puis extension vers les zones secondaires.</li>
           <li>Partenariats logistiques et paiement par pays pour accélérer l’adoption.</li>
           <li>Onboarding local des vendeurs avec formation, standards qualité et support.</li>
-          <li>Approche multi-secteurs: agro, retail, mode et services B2B.</li>
+          <li>Approche multi-secteurs: commerce, retail, mode et services B2B.</li>
         </ul>
       </article>
     </div>

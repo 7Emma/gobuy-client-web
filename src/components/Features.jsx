@@ -17,21 +17,21 @@ export const Features = () => {
   const features = [
     {
       icon: MapPin,
-      title: 'Géolocalisation Directe',
+      title: 'Vendeurs pres de vous',
       description:
-        'Découvrez les fermes et producteurs autour de vous en temps réel sur une carte interactive.',
+        'Trouvez rapidement des vendeurs fiables dans votre ville selon vos besoins du moment.',
     },
     {
       icon: Zap,
-      title: 'Click & Collect',
+      title: 'Commande en quelques clics',
       description:
-        'Commandez vos paniers depuis votre canapé et récupérez-les quand vous le souhaitez à la ferme.',
+        'Passez votre commande en ligne sans vous casser la tete avec de bon vendeurs.',
     },
     {
       icon: Shield,
-      title: 'Qualité Certifiée',
+      title: 'Vendeurs verifies',
       description:
-        'Tous nos producteurs sont vérifiés et engagés dans une charte de transparence totale.',
+        'Chaque boutique est controlee pour vous offrir plus de confiance et de tranquillite.',
     },
   ];
 
@@ -41,10 +41,10 @@ export const Features = () => {
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-[10px] font-black uppercase tracking-[0.2em] text-orange-500 mb-4">
-            Pourquoi nous choisir ?
+            Pourquoi GoBuy ?
           </h2>
           <h3 className="text-3xl md:text-4xl font-bold tracking-tight">
-            Mieux manger n'a jamais été aussi simple.
+            Acheter devient simple, rapide et centralise.
           </h3>
         </div>
 
@@ -60,7 +60,7 @@ export const Features = () => {
           {[
             ['3 200+', 'Vendeurs actifs'],
             ['58', 'Villes couvertes'],
-            ['120K+', 'Commandes / mois'],
+            ['120K+', 'Commandes retail / mois'],
             ['4.8/5', 'Satisfaction moyenne'],
           ].map(([value, label]) => (
             <article key={label} className="p-5 rounded-2xl bg-white border border-slate-100 text-center">
@@ -73,9 +73,9 @@ export const Features = () => {
         {/* Use Cases */}
         <div className="mt-12 grid lg:grid-cols-3 gap-4">
           {[
-            ['Sénégal · Retail', 'Commandes B2B de produits alimentaires avec suivi logistique local.'],
-            ['Côte d’Ivoire · Agro', 'Digitalisation des ventes producteurs avec catalogue et paiements sécurisés.'],
-            ['Kenya · Distribution', 'Approvisionnement multi-villes et gestion des flux en temps réel.'],
+            ['Shopping tech', 'Commandez un ordinateur, un telephone ou des accessoires chez des vendeurs verifies.'],
+            ['Mode & beaute', 'Trouvez chaussures, chemises, pommades et autres produits en un seul endroit.'],
+            ['Maison & quotidien', 'Equipez cuisine, salon et accessoires du quotidien sans perdre de temps.'],
           ].map(([title, text]) => (
             <article key={title} className="p-5 rounded-2xl border border-slate-100 bg-white">
               <h4 className="font-bold text-slate-900 mb-2">{title}</h4>
@@ -87,8 +87,8 @@ export const Features = () => {
         {/* Testimonials */}
         <div className="mt-12 grid md:grid-cols-2 gap-6">
           {[
-            ['Aminata, commerçante à Dakar', 'GoBuy nous a permis de sécuriser nos commandes et d’augmenter notre volume en 3 mois.'],
-            ['Koffi, producteur à Abidjan', 'La plateforme est simple, les paiements sont rapides, et je gagne du temps chaque semaine.'],
+            ['Aminata, acheteuse a Dakar', 'Au lieu de fouiller plusieurs statuts WhatsApp, je trouve vite ce que je veux et je commande.'],
+            ['Koffi, vendeur a Abidjan', 'J ai centralise mes ventes sur GoBuy et je gere mieux mon stock, mes clients et mes commandes.'],
           ].map(([name, text]) => (
             <article key={name} className="p-6 rounded-3xl bg-white border border-slate-100 shadow-sm">
               <Quote className="w-5 h-5 text-orange-500 mb-3" />

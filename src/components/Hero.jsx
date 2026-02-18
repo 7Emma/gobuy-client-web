@@ -36,7 +36,7 @@ export const Hero = () => {
               href="#"
               className="flex items-center gap-3 px-8 py-4 bg-slate-900 text-white rounded-2xl font-bold hover:scale-105 transition-transform shadow-xl"
             >
-              <Apple className="w-6 h-6" />
+              <img src='https://logoeps.com/wp-content/uploads/2012/12/apple-logo-eps-logo-vector.png' className="w-8 h-6" />
               <div className="text-left">
                 <p className="text-[10px] uppercase opacity-60 leading-none">Disponible sur</p>
                 <p className="text-lg leading-none">App Store</p>
@@ -46,7 +46,7 @@ export const Hero = () => {
               href="#"
               className="flex items-center gap-3 px-8 py-4 bg-white border border-slate-200 text-slate-900 rounded-2xl font-bold hover:scale-105 transition-transform shadow-sm"
             >
-              <Play className="w-6 h-6 text-orange-500" />
+              <img src='https://www.01net.com/resize/w112/e775bAvQpD3cEjuIKfMgmovddNEpxwX4nxP91dxn.png' className="w-6 h-6" />
               <div className="text-left">
                 <p className="text-[10px] uppercase opacity-60 leading-none">Disponible sur</p>
                 <p className="text-lg leading-none">Google Play</p>
