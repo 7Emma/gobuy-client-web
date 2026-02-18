@@ -11,7 +11,7 @@ export const Hero = () => {
         {/* Left content */}
         <div className="space-y-8 text-center lg:text-left">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-50 text-orange-600 rounded-full text-sm font-bold animate-bounce">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-50 text-orange-600 rounded-full text-sm font-bold">
             <Star className="w-4 h-4" />
             <span>Plateforme de commerce panafricaine</span>
           </div>

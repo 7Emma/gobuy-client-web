@@ -1,5 +1,5 @@
-import React from 'react';
-import { CheckCircle2 } from 'lucide-react';
+import React from "react";
+import { CheckCircle2 } from "lucide-react";
 
 export const Producers = () => {
   return (
@@ -14,11 +14,14 @@ export const Producers = () => {
             <div className="text-white space-y-6">
               <h3 className="text-3xl md:text-5xl font-bold leading-tight">
                 Vous etes vendeur ? <br />
-                <span className="text-orange-500">Centralisez votre boutique.</span>
+                <span className="text-orange-500">
+                  Centralisez votre boutique.
+                </span>
               </h3>
               <p className="text-slate-400 text-lg">
-                Rejoignez GoBuy pour publier votre catalogue, recevoir des commandes retail et gerer
-                votre activite depuis un espace vendeur unique.
+                Rejoignez GoBuy pour publier votre catalogue, recevoir des
+                commandes retail et gerer votre activite depuis un espace
+                vendeur unique.
               </p>
 
               {/* Benefits */}
@@ -46,7 +49,7 @@ export const Producers = () => {
             {/* Right image */}
             <div className="relative">
               <img
-                src="https://www.lecoledescereales.fr/sites/default/files/styles/wysiwyg_100/public/2022-07/agriculteur_dans_un_champ.jpg?itok=fg4jnwEo"
+                src="https://cdn.prod.website-files.com/65e5a068e74abcfb560b2772/686cfd388752ca2739be1097_65ee9b20188fb988d1c8fd8a_conseiller-p-1080.webp"
                 alt="Vendeuse GoBuy"
                 className="rounded-3xl shadow-2xl w-full h-auto"
               />
