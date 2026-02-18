@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+
+:root {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  scroll-behavior: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: auto;
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at top right, rgba(249, 115, 22, 0.1), transparent),
+    radial-gradient(circle at bottom left, rgba(79, 70, 229, 0.05), transparent);
+}
+
+.route-transition {
+  animation: route-fade-in 260ms ease-out;
+}
+
+@keyframes gradient-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes route-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

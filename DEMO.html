@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerroirConnect - Producteurs Locaux</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(249, 115, 22, 0.1), transparent),
+                        radial-gradient(circle at bottom left, rgba(79, 70, 229, 0.05), transparent);
+        }
+
+        .phone-mockup {
+            box-shadow: 0 50px 100px -20px rgba(0,0,0,0.25), 0 30px 60px -30px rgba(0,0,0,0.3);
+            border: 8px solid #1a1a1a;
+            border-radius: 3rem;
+        }
+
+        .blob {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: #f97316;
+            filter: blur(80px);
+            opacity: 0.1;
+            z-index: -1;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900 overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-orange-500 rounded-xl flex items-center justify-center text-white shadow-lg shadow-orange-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 21 1.5 21 1.5S9.5 7 8.3 12.5A7 7 0 0 1 11 20Z"/><path d="M2 21c.6.5 1.6 1 2.5 1s1.6-.5 2.5-1 1.6-1 2.5-1 1.6.5 2.5 1 1.6 1 2.5 1 1.6-.5 2.5-1 1.6-1 2.5-1 1.6.5 2.5 1 1.6 1 2.5 1"/></svg>
+                </div>
+                <span class="text-xl font-bold tracking-tight">Terroir<span class="text-orange-500">Connect</span></span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+                <a href="#features" class="hover:text-orange-500 transition-colors">Fonctionnalités</a>
+                <a href="#producers" class="hover:text-orange-500 transition-colors">Pour les Producteurs</a>
+                <a href="#download" class="px-5 py-2.5 bg-slate-900 text-white rounded-full hover:bg-slate-800 transition-all shadow-md">Installer l'app</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 hero-gradient">
+        <div class="blob top-0 -left-20"></div>
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-orange-50 text-orange-600 rounded-full text-sm font-bold animate-bounce">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 10.26 24 12.52 17.77 18.93 19.24 28 12 23.77 4.76 28 6.23 18.93 0 12.52 8.91 10.26 12 2"/></svg>
+                    <span>N°1 des circuits courts en France</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight">
+                    Le goût du vrai, <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-500">en un clic.</span>
+                </h1>
+                <p class="text-xl text-slate-500 leading-relaxed max-w-xl mx-auto lg:mx-0">
+                    Soutenez vos agriculteurs locaux et accédez aux meilleurs produits de saison sans intermédiaire. Simple, éthique et délicieux.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+                    <a href="#" class="flex items-center gap-3 px-8 py-4 bg-slate-900 text-white rounded-2xl font-bold hover:scale-105 transition-transform shadow-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 13.5c-.91 0-1.82-.33-2.56-1.02-1.44-1.45-1.44-3.78 0-5.23 1.45-1.45 3.78-1.45 5.23 0 1.45 1.45 1.45 3.78 0 5.23-.74.69-1.65 1.02-2.67 1.02zm0-7.5c-.91 0-1.82.33-2.56 1.06-.65.65-1.01 1.5-1.01 2.41s.36 1.76 1.01 2.41c1.44 1.45 3.78 1.45 5.23 0 1.45-1.45 1.45-3.78 0-5.23-.74-.73-1.65-1.06-2.67-1.06z"/><path d="M17.05 2C9.3 2 3 8.3 3 16.05c0 4.92 2.71 9.23 6.72 11.48.35.2.72.3 1.09.3.68 0 1.35-.35 1.72-.98 1.12-1.94 2.5-3.68 4.08-5.12 1.58 1.44 2.96 3.18 4.08 5.12.37.63 1.04.98 1.72.98.36 0 .73-.1 1.09-.3 4.01-2.25 6.72-6.56 6.72-11.48C31.1 8.3 24.8 2 17.05 2zm0 28.1c-3.62 0-6.92-1.46-9.32-3.81-1.01-1.05-1.87-2.22-2.55-3.47 1.19-1.19 2.68-2.11 4.28-2.68 1.1.94 2.42 1.65 3.87 1.96-.59.74-.95 1.68-.95 2.71 0 2.5 2.03 4.53 4.53 4.53s4.53-2.03 4.53-4.53c0-1.03-.35-1.97-.95-2.71 1.45-.3 2.77-1.02 3.87-1.96 1.59.57 3.08 1.49 4.28 2.68-.68 1.25-1.54 2.42-2.55 3.47-2.4 2.35-5.7 3.81-9.32 3.81z"/></svg>
+                        <div class="text-left">
+                            <p class="text-[10px] uppercase opacity-60 leading-none">Disponible sur</p>
+                            <p class="text-lg leading-none">App Store</p>
+                        </div>
+                    </a>
+                    <a href="#" class="flex items-center gap-3 px-8 py-4 bg-white border border-slate-200 text-slate-900 rounded-2xl font-bold hover:scale-105 transition-transform shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-orange-500"><path d="M3 13h2v8H3zm4-8h2v16H7zm4-2h2v18h-2zm4 4h2v14h-2zm4-2h2v16h-2z"/></svg>
+                        <div class="text-left">
+                            <p class="text-[10px] uppercase opacity-60 leading-none">Disponible sur</p>
+                            <p class="text-lg leading-none">Google Play</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex items-center gap-4 justify-center lg:justify-start pt-4">
+                    <div class="flex -space-x-3">
+                        <img src="https://i.pravatar.cc/100?u=1" class="w-10 h-10 rounded-full border-4 border-white shadow-sm" alt="User">
+                        <img src="https://i.pravatar.cc/100?u=2" class="w-10 h-10 rounded-full border-4 border-white shadow-sm" alt="User">
+                        <img src="https://i.pravatar.cc/100?u=3" class="w-10 h-10 rounded-full border-4 border-white shadow-sm" alt="User">
+                    </div>
+                    <p class="text-sm font-semibold text-slate-400">+10k utilisateurs nous font confiance</p>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center lg:justify-end">
+                <div class="absolute -z-10 w-72 h-72 bg-orange-400/20 rounded-full blur-3xl animate-pulse"></div>
+                <div class="phone-mockup w-[300px] h-[600px] bg-slate-100 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=500&q=80" class="absolute inset-0 w-full h-full object-cover" alt="App Preview">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
+                        <p class="text-2xl font-bold">Produits Bio de saison</p>
+                        <p class="text-sm opacity-80">Livrés directement chez vous.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-[10px] font-black uppercase tracking-[0.2em] text-orange-500 mb-4">Pourquoi nous choisir ?</h2>
+                <h3 class="text-3xl md:text-4xl font-bold tracking-tight">Mieux manger n'a jamais été aussi simple.</h3>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition-shadow">
+                    <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Géolocalisation Directe</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">Découvrez les fermes et producteurs autour de vous en temps réel sur une carte interactive.</p>
+                </div>
+
+                <div class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition-shadow">
+                    <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Click & Collect</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">Commandez vos paniers depuis votre canapé et récupérez-les quand vous le souhaitez à la ferme.</p>
+                </div>
+
+                <div class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition-shadow">
+                    <div class="w-14 h-14 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Qualité Certifiée</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed">Tous nos producteurs sont vérifiés et engagés dans une charte de transparence totale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Producteurs -->
+    <section id="producers" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-slate-900 rounded-[3rem] p-8 md:p-16 overflow-hidden relative">
+                <div class="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="text-white space-y-6">
+                        <h3 class="text-3xl md:text-5xl font-bold leading-tight">Vous êtes agriculteur ? <br><span class="text-orange-500">Digitalisez votre vente.</span></h3>
+                        <p class="text-slate-400 text-lg">Rejoignez notre réseau et bénéficiez d'outils de marketing puissants, de gestion de stocks simplifiée et d'une visibilité locale accrue.</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-3 text-slate-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-orange-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Zéro commission sur vos premières ventes</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-slate-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-orange-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Paiements sécurisés et immédiats</span>
+                            </li>
+                            <li class="flex items-center gap-3 text-slate-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-orange-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Outils de marketing intégrés</span>
+                            </li>
+                        </ul>
+                        <button class="px-8 py-4 bg-orange-500 text-white font-black rounded-2xl uppercase tracking-wider text-sm hover:bg-orange-600 transition-colors shadow-lg shadow-orange-900/40">Ouvrir ma boutique</button>
+                    </div>
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1595273670150-db0a3d39074f?w=800&q=80" alt="Farmer" class="rounded-3xl shadow-2xl">
+                    </div>
+                </div>
+                <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-orange-500/10 rounded-full blur-3xl"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download & QR Section -->
+    <section id="download" class="py-24 bg-white text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h3 class="text-4xl font-bold mb-8">Prêt à manger mieux ?</h3>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-12 p-8 bg-slate-50 rounded-3xl border border-slate-100">
+                <div class="space-y-4">
+                    <p class="text-lg font-bold text-slate-700">Scannez pour installer</p>
+                    <div class="p-4 bg-white rounded-2xl shadow-sm inline-block border border-slate-200">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://example.com" alt="QR Code" class="w-32 h-32">
+                    </div>
+                </div>
+                <div class="h-px w-20 bg-slate-200 md:h-32 md:w-px"></div>
+                <div class="flex flex-col gap-4">
+                    <a href="#" class="flex items-center gap-4 px-8 py-4 bg-black text-white rounded-2xl hover:bg-slate-800 transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 13.5c-.91 0-1.82-.33-2.56-1.02-1.44-1.45-1.44-3.78 0-5.23 1.45-1.45 3.78-1.45 5.23 0 1.45 1.45 1.45 3.78 0 5.23-.74.69-1.65 1.02-2.67 1.02zm0-7.5c-.91 0-1.82.33-2.56 1.06-.65.65-1.01 1.5-1.01 2.41s.36 1.76 1.01 2.41c1.44 1.45 3.78 1.45 5.23 0 1.45-1.45 1.45-3.78 0-5.23-.74-.73-1.65-1.06-2.67-1.06z"/><path d="M17.05 2C9.3 2 3 8.3 3 16.05c0 4.92 2.71 9.23 6.72 11.48.35.2.72.3 1.09.3.68 0 1.35-.35 1.72-.98 1.12-1.94 2.5-3.68 4.08-5.12 1.58 1.44 2.96 3.18 4.08 5.12.37.63 1.04.98 1.72.98.36 0 .73-.1 1.09-.3 4.01-2.25 6.72-6.56 6.72-11.48C31.1 8.3 24.8 2 17.05 2zm0 28.1c-3.62 0-6.92-1.46-9.32-3.81-1.01-1.05-1.87-2.22-2.55-3.47 1.19-1.19 2.68-2.11 4.28-2.68 1.1.94 2.42 1.65 3.87 1.96-.59.74-.95 1.68-.95 2.71 0 2.5 2.03 4.53 4.53 4.53s4.53-2.03 4.53-4.53c0-1.03-.35-1.97-.95-2.71 1.45-.3 2.77-1.02 3.87-1.96 1.59.57 3.08 1.49 4.28 2.68-.68 1.25-1.54 2.42-2.55 3.47-2.4 2.35-5.7 3.81-9.32 3.81z"/></svg>
+                        <span class="text-xl font-bold">App Store</span>
+                    </a>
+                    <a href="#" class="flex items-center gap-4 px-8 py-4 bg-black text-white rounded-2xl hover:bg-slate-800 transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M3 13h2v8H3zm4-8h2v16H7zm4-2h2v18h-2zm4 4h2v14h-2zm4-2h2v16h-2z"/></svg>
+                        <span class="text-xl font-bold">Play Store</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-100 text-center text-slate-400 text-sm font-medium">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-slate-100 rounded-lg flex items-center justify-center text-slate-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 21 1.5 21 1.5S9.5 7 8.3 12.5A7 7 0 0 1 11 20Z"/><path d="M2 21c.6.5 1.6 1 2.5 1s1.6-.5 2.5-1 1.6-1 2.5-1 1.6.5 2.5 1 1.6 1 2.5 1 1.6-.5 2.5-1 1.6-1 2.5-1 1.6.5 2.5 1 1.6 1 2.5 1"/></svg>
+                </div>
+                <span class="font-bold text-slate-900">TerroirConnect</span>
+            </div>
+            <div class="flex gap-8">
+                <a href="#" class="hover:text-slate-900">Confidentialité</a>
+                <a href="#" class="hover:text-slate-900">Conditions</a>
+                <a href="#" class="hover:text-slate-900">Contact</a>
+            </div>
+            <p>&copy; 2024 TerroirConnect. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
