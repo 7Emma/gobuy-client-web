@@ -1,6 +1,10 @@
-Place your two app screenshots here:
+# Mockups
 
-- `gobuy-login.jpg` (login screen)
-- `gobuy-home.jpg` (home screen)
+Ce dossier contient les captures app affichees dans le Hero du site web.
 
-They are used in the website hero phone mockup.
+Fichiers attendus:
+
+- `gobuy-login.jpg`: ecran login
+- `gobuy-home.jpg`: ecran home
+
+Ces images sont consommees par `src/components/Hero.jsx`.
