@@ -1,5 +1,4 @@
 import React from 'react';
-import { Apple, Play } from 'lucide-react';
 
 export const Download = () => {
   return (
