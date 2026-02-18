@@ -46,9 +46,9 @@ export const Producers = () => {
             {/* Right image */}
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1595273670150-db0a3d39074f?w=800&q=80"
-                alt="Farmer"
-                className="rounded-3xl shadow-2xl"
+                src="https://www.lecoledescereales.fr/sites/default/files/styles/wysiwyg_100/public/2022-07/agriculteur_dans_un_champ.jpg?itok=fg4jnwEo"
+                alt="Producteur GoBuy"
+                className="rounded-3xl shadow-2xl w-full h-auto"
               />
             </div>
           </div>

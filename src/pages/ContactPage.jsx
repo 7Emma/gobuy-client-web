@@ -1,9 +1,48 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { PageShell } from './PageShell';
 
 export const ContactPage = () => {
-  const formEndpoint = import.meta.env.VITE_CONTACT_FORM_ENDPOINT || '';
+  const formEndpoint = import.meta.env.VITE_CONTACT_FORM_ENDPOINT || '/api/contact';
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [feedback, setFeedback] = useState({ type: '', message: '' });
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    const payload = Object.fromEntries(formData.entries());
+
+    setIsSubmitting(true);
+    setFeedback({ type: '', message: '' });
+
+    try {
+      const response = await fetch(formEndpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await response.json().catch(() => ({}));
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Impossible d’envoyer le message pour le moment.');
+      }
+
+      form.reset();
+      setFeedback({ type: 'success', message: data.message || 'Message envoyé avec succès.' });
+    } catch (error) {
+      setFeedback({
+        type: 'error',
+        message: error.message || 'Erreur lors de l’envoi du message.',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <PageShell
@@ -32,8 +71,7 @@ export const ContactPage = () => {
         </div>
         <form
           className="p-6 rounded-3xl border border-slate-100 bg-white shadow-sm space-y-4"
-          action={formEndpoint || undefined}
-          method={formEndpoint ? 'POST' : undefined}
+          onSubmit={handleSubmit}
         >
           <input type="hidden" name="source" value="website-contact-page" />
           <input name="name" className="w-full rounded-xl border border-slate-200 px-4 py-3" placeholder="Nom" required />
@@ -46,15 +84,18 @@ export const ContactPage = () => {
             <option value="presse">Presse</option>
           </select>
           <textarea name="message" className="w-full rounded-xl border border-slate-200 px-4 py-3 min-h-32" placeholder="Votre message" required />
-          {formEndpoint ? (
-            <button type="submit" className="px-6 py-3 rounded-xl bg-slate-900 text-white font-semibold hover:bg-slate-800">
-              Envoyer
-            </button>
-          ) : (
-            <p className="text-sm text-slate-500">
-              Configurez <code>VITE_CONTACT_FORM_ENDPOINT</code> pour connecter ce formulaire (Formspree/backend).
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="px-6 py-3 rounded-xl bg-slate-900 text-white font-semibold hover:bg-slate-800 disabled:opacity-60 disabled:cursor-not-allowed"
+          >
+            {isSubmitting ? 'Envoi...' : 'Envoyer'}
+          </button>
+          {feedback.message ? (
+            <p className={`text-sm ${feedback.type === 'success' ? 'text-emerald-600' : 'text-red-600'}`}>
+              {feedback.message}
             </p>
-          )}
+          ) : null}
         </form>
       </div>
 
